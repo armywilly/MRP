@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/mrp/dropdown/css/style.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/mrp/theme/css/style.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/mrp/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/mrp/mobirise/css/blog.css" type="text/css">
+
   
   
   
