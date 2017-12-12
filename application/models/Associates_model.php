@@ -63,10 +63,20 @@ class Associates_model extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('associates');
 		$this->db->where('id_staff',$id_staff);
-		$this->db->order_by('id_staff','DESC');
+		$this->db->order_by('urutan','ASC');
 		$query = $this->db->get();
 		return $query->row();
-	} 
+	}
+
+
+    // End Associates
+        public function endAsc() {
+            $this->db->select('*');
+            $this->db->from('associates');
+            $this->db->order_by('urutan','ASC');
+            $query = $this->db->get();
+            return $query->row_array();
+        } 
 	
 	
 	// Tambah

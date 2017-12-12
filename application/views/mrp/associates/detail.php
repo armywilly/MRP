@@ -10,7 +10,7 @@
 
 </section>
 
-<?php
+        <?php
             // Session 
             if($this->session->flashdata('sukses')) { 
                 echo '<div class="alert alert-success">';
@@ -28,12 +28,12 @@
     <div class="container">
 
         <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
-            <?php echo $staff->nama;?></h2>
+            <?php echo $staff['nama']; ?></h2>
         
 
         <div class="media-container-row mt-5 pt-3">
             <div class="mbr-figure" style="width: 45%;">
-                <img src="<?php echo base_url('assets/upload/image/thumbs/'.$staff->gambar) ?>" alt="" title="" media-simple="true">
+                <img src="<?php echo base_url('assets/upload/image/'.$staff['gambar']);?>" alt="" title="" media-simple="true">
             </div>
             <div class="tabs-container">
                 <ul class="nav nav-tabs" role="tablist">
@@ -50,7 +50,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    My Name is Muhammad Army. Was Graduated from Gunadarma University on 2016. I work as web and Ui &amp; Ux Developer at MRP Indopratama since early 2017. So exited had to be part of them.
+                                    <?php echo $staff['isi']; ?>
                                 </p>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    - Bachelor Degree of Informatics    Engineering on Gunadarma    University 2016.<br>- Bachelor Degree of Informatics    Engineering on Gunadarma    University 2016.<br>- Bachelor Degree of Informatics    Engineering on Gunadarma    University 2016.<br>- Bachelor Degree of Informatics    Engineering on Gunadarma    University 2016.<br>- Bachelor Degree of Informatics    Engineering on Gunadarma    University 2016.<br></p>
+                                    <?php echo $staff['pendidikan']; ?></p>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                     <div id="tab3" class="tab-pane" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="mbr-text py-5 mbr-fonts-style display-7">- CCNA Certificate.<br>- Database Fundamental by     Microsoft.<br>- Fullstack Developer at Hack8.<br></p>
+                                <p class="mbr-text py-5 mbr-fonts-style display-7"><?php echo $staff['sertifikat']; ?></p>
                             </div>
                         </div>
                     </div>

@@ -18,11 +18,12 @@ class Associates extends CI_Controller {
 	}
 
 	// Detil Asc
-	public function detail($id_staff) {
+	public function detail($id_staff='') {
 
 		$site  		= $this->mConfig->list_config();
 		$product 	= $this->mProducts->listProductsPub();
-		$staff 		= $this->mAssociates->detail($id_staff);                                   		
+		$staff		= $this->mAssociates->detail($id_staff);
+
 		
 		$data = array(	'title'		=> $staff['nama'].' - '.$site['nameweb'],
 						'site'		=> $site,

@@ -156,7 +156,6 @@ class Associates extends CI_Controller {
 			redirect(base_url('admin/associates'));
 		}}else{
 			$i = $this->input;
-			$slugAsc = $endAsc['id_staff'].'-'.url_title($i->post('nama'),'dash', TRUE);
 			$data = array(	'id_staff'		=> $staff->id_staff,
 							'ukuran'		=> $i->post('ukuran'),
 							'nama'			=> $i->post('nama'),
