@@ -34,8 +34,8 @@ class Blog extends CI_Controller {
 						'categories'=> $categories,
 						'lastBlogs'	=> $lastBlogs,
 						'pagin' 	=> $this->pagination->create_links(),												
-						'isi'		=> 'front/blog/list');
-		$this->load->view('front/layout/wrapper',$data);
+						'isi'		=> 'mrp/blog/blog');
+		$this->load->view('mrp/layout/wrapper',$data);
 	}
 
 	// Search Blog
